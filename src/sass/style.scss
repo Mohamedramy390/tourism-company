@@ -1,0 +1,233 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./variables";
+
+
+*{
+    font-family: "cairo";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+
+/*navbar*/
+.noTransparrent{
+    background-color: $main-color !important;
+
+    .navbar-nav{   
+        a{
+            &:hover{
+                color: $color-black !important;
+            }
+        }
+    }
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent ;
+    padding: 10px 100px;
+    z-index: 99;
+
+    .navbar-nav{
+        width: 70%;
+        background-color: transparent;
+        margin-right: 50px;
+    
+        a{
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin-right: 30px;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+}
+.navbar-brand{
+    img{
+        width: 80px;
+        height: 80px;
+    }
+}
+.intro{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/BUSINESS-TRAVEL.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .info{
+        z-index: 97;
+        background-color: $color-black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        h2{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            margin: auto;
+            padding-top: 250px;
+            border-bottom: 5px solid $main-color;
+            border-radius: 10px;
+            width: 70px;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            justify-content: center;
+            display: flex;
+            width: 60%;
+            margin: auto;
+        }
+    }
+}
+.head-title{
+    text-align: center;
+    font-size: 42px;
+    color: $main-color;
+    margin-top: 10vh;
+    margin-bottom: 20px;
+}
+.services{
+    .card{
+        border: 0;
+        margin-bottom: 40px;
+        .card-icon{
+            text-align: center;
+             svg{
+                display: block;
+                text-align: center;
+                font-size: 80px;
+                color: $main-color;
+                margin: auto;
+            }
+        }
+
+        .card-body{
+            .card-title{
+                font-weight: bold;
+                border-left: 3px solid $main-color;
+            }
+            .card-text{
+                font-size: 18px;
+                color: $color-gray;
+
+            }
+        }
+    }   
+}
+.trips{
+ 
+    .card{
+        .card-body{
+            padding:20px 30px ;
+            .card-title{
+                display: inline-block;
+                font-weight: bold;
+            }
+            a{
+                display: block;
+                background-color: $main-color !important;
+                border: none;
+                margin-top: 10px;
+            }
+            .price{
+                display: inline-block;
+                float: left;
+                font-size: 20px;
+                color: green;
+            }
+        }
+    }
+}
+
+	.contact {
+        padding: 100px 0;
+		.company-adress {
+			h4 {
+				font-size: 24px;
+				color: $color-black;
+				margin-bottom: 40px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 25px;
+				color: $main-color;
+				font-weight: 500;
+			}
+		}
+		.contact-text {
+			h4 {
+				font-size: 24px;
+				color: $color-black;
+				margin-bottom: 20px;
+				margin-top: 70px;
+				font-weight: bold;
+			}
+			form {
+				width: 60%;
+				input {
+					background-color: #f7f7f7;;
+					border: 2px solid #ececec;
+					color: $color-gray;
+					font-size: 15px;
+					line-height: 25px;
+					border-radius: 3px;
+					text-align: right;
+				}
+				button {
+					background-color: $main-color;
+					font-size: 15px;
+					color: #fff;
+					padding: 10px 30px;
+					border-radius: 3px;
+					width: auto;
+					border: 0;
+					float: right;
+				}
+			}
+		}
+	}
+
+.contact {
+	.contact-text {
+		form {
+			textarea {
+				background-color: #f7f7f7;;
+				border: 2px solid #ececec;
+				color: $color-gray;
+				font-size: 15px;
+				line-height: 25px;
+				border-radius: 3px;
+				text-align: right;
+			}
+		}
+	}
+}
+
+footer {
+    .copy-right{
+        background-color: $color-black;
+        padding: 30px 0;
+
+        p{
+            font-size: 15px;
+            color: #acacac;
+        }
+    }    
+    #year{
+        margin-right: 3px;
+    }
+} 
+
+
+
