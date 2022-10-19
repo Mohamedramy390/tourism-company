@@ -18,6 +18,9 @@ window.onscroll= function(){
     scroll();
 }
 
+var year = new Date().getFullYear();
+document.getElementById("year").innerHTML = year;
+
 (function () {
     'use strict'
   
@@ -37,6 +40,3 @@ window.onscroll= function(){
         }, false)
       })
   })()
-
-  var year = new Date().getFullYear();
-  document.getElementById("year").innerHTML = year;
